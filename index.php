@@ -34,40 +34,38 @@
     <main>
 
         <section id="top" class="grid-con">
-            <h1>INK INC.</h1>
+            <h1 class="full">INK INC.</h1>
             <p></p>
         </section>
 
         <section id="about" class="grid-con">
-            <h2>About Us</h2>
+            <h2 class="full">About Us</h2>
             <p></p>
         </section>
 
         <section id="artists" class="grid-con">
-            <h2>Our Artists</h2>
+            <h2 class="full">Our Artists</h2>
             <p></p>
         </section>
 
         <section id="services" class="grid-con">
-            <h2>Our Services</h2>
+            <h2 class="full">Our Services</h2>
             <p></p>
         </section>
 
         <section id="safety" class="grid-con">
-            <h2>Safety First</h2>
+            <h2 class="full">Safety First</h2>
             <p></p>
         </section>
 
         <section id="booking" class="grid-con">
-            <h2>Book an Appointment</h2>
+            <h2 class="full">Book an Appointment</h2>
             <p></p>
         </section>
 
         <section id="contact" class="grid-con">
-            <h2>Contact Us</h2>
+            <h2 class="full">Contact Us</h2>
             <p></p>
-
-
         </section>
 
     </main>
