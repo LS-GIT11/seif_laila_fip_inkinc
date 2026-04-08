@@ -1,0 +1,58 @@
+section{
+    scroll-snap-align: start;
+}
+
+#top{
+    background-color: var(--sea);
+    display: flex;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+#about{
+    background-color: var(--main-white);
+    display: flex;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+#artists{
+    background-color: var(--coral);
+    display: flex;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+#services{
+    background-color: var(--main-white);
+    display: flex;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+#safety{
+    background-color: var(--berry);
+    display: flex;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+#booking{
+    background-color: var(--main-white);
+    display: flex;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+#contact{
+    background-color: var(--sea);
+    display: flex;
+    height: fit-content;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px){
+    section{
+        margin-left: 180px;
+    }
+}
