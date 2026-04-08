@@ -15,21 +15,66 @@
 </head>
 <body>
 
-    <header></header>
+    <header>
+        <img id="logo" src="frontend/imgs/logo.svg" alt="INK INC. logo">
+        <img id="menu" src="frontend/imgs/menu.svg" alt="Menu icon">
+        <nav>
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#safety">Safety</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        
-        <section class="grid-con"></section>
 
-        <section class="grid-con"></section>
+        <section id="top" class="grid-con">
+            <h1>INK INC.</h1>
+            <p></p>
+        </section>
 
-        <section class="grid-con"></section>
+        <section id="about" class="grid-con">
+            <h2>About Us</h2>
+            <p></p>
+        </section>
 
-        <section class="grid-con"></section>
+        <section id="artists" class="grid-con">
+            <h2>Our Artists</h2>
+            <p></p>
+        </section>
+
+        <section id="services" class="grid-con">
+            <h2>Our Services</h2>
+            <p></p>
+        </section>
+
+        <section id="safety" class="grid-con">
+            <h2>Safety First</h2>
+            <p></p>
+        </section>
+
+        <section id="booking" class="grid-con">
+            <h2>Book an Appointment</h2>
+            <p></p>
+        </section>
+
+        <section id="contact" class="grid-con">
+            <h2>Contact Us</h2>
+            <p></p>
+
+
+        </section>
 
     </main>
 
-    <footer></footer>
+    <footer>
+        &copy; 2025 INK INC. All rights reserved.
+    </footer>
     
 </body>
 </html>
