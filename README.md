@@ -31,9 +31,9 @@ This project is made to showcase the branding and promotional website for INK IN
 All programming and design is created by Laila S.
 
 ### Sources Used
-- Library 1
-- Source 2
-- Link 3
+- [Hero Patterns - A collection of repeatable SVG Backgrounds](https://heropatterns.com/)
+- 
+- 
 
 
 ## License
