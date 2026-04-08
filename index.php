@@ -33,9 +33,9 @@
 
     <main>
 
-        <section id="top" class="grid-con">
-            <h1 class="full">INK INC.</h1>
-            <p></p>
+        <section id="top" class="">
+            <h1 class="full">Clean Design<br><span> Made to Last<span></h1>
+            <p id="hero-description" class="full">We bring your ideas to life in the most creative, innovative, and impactful ways, while maintaining the highest standards of quality and professionalism.</p>
         </section>
 
         <section id="about" class="grid-con">
