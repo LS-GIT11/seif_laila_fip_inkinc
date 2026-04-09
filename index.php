@@ -64,7 +64,9 @@
 
             <ul id="artist-list" v-else>
                     <li v-for="artist in artistData" :key="artist.id">
-                        {{ artist.name }}
+                        <h3>{{ artist.name }}</h3>
+                        <p>{{ artist['tattoo-style'] }}</p>
+                        <button @click="fetchArtistDetails(artist.id)">View Details</button>
                     </li>
             </ul>
 <!-- End of Artist List -->

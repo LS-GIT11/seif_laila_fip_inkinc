@@ -18,7 +18,24 @@ class ArtistFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->unique()->randomElement([
+                'Daniel Thomas',
+                'Laura Garcia',
+                'James Miller',
+                'Sophia Rodriguez',
+                'Robert Moore',
+                'Emily Kim',
+            ]),
+            'tattoo_style' => fake()->unique()->randomElement([
+                'Traditional',
+                'Realism',
+                'Watercolor',
+                'Tribal',
+                'Neo-Traditional',
+                'Japanese',
+                'Blackwork',
+                'Dotwork',
+            ]),
         ];
     }
 }
