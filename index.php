@@ -33,42 +33,112 @@
 
     <main>
 
+ <!-- Hero Section -->
         <section id="top" class="">
-            <h1 class="full">Clean Design<br><span> Made to Last<span></h1>
-            <p id="hero-description" class="full">We bring your ideas to life in the most creative, innovative, and impactful ways, while maintaining the highest standards of quality and professionalism.</p>
+            <h1 class="full">Clean Design<br><span> Made to Last</span></h1>
+            <p id="hero-description" class="full">We bring your ideas to life in the most creative, innovative, and impactful ways,<br> while maintaining the highest standards of quality and professionalism.</p>
         </section>
+<!-- End of Hero Section -->
 
+
+
+
+<!-- About Section -->
         <section id="about" class="grid-con">
             <h2 class="full">About Us</h2>
             <p></p>
         </section>
+<!-- End of About Section -->
 
+
+
+
+<!-- Artists Section -->
         <section id="artists" class="grid-con">
             <h2 class="full">Our Artists</h2>
             <p></p>
+
+            <div v-if="loadingArtists" class="loader-con">
+                <img class="loader" src="frontend/imgs/loader.svg" alt="Loading ...">
+            </div>
+
+            <ul id="artist-list" v-else>
+                    <li v-for="artist in artistData" :key="artist.id">
+                        {{ artist.name }}
+                    </li>
+            </ul>
+<!-- End of Artist List -->
+<!-- Artist Details -->
+            <div v-if="loadingArtist" class="loader-con">
+                <img class="loader" src="frontend/imgs/loader.svg" alt="Loading artist details">
+            </div>
+
+            <div v-else-if="error" class="error-box">
+                {{ error }}
+            </div>
+
+            <div v-else-if="selectedArtist" id="info-box">
+                <h2>Artist Details</h2>
+                <p id="name-tag"> {{ selectedArtist.name }}</p>
+                <p id="description-tag"> {{ selectedArtist.description }}</p>
+                <p id="price-tag">${{ selectedArtist.price }}</p>
+            </div>
+
+            <div v-else id="info-box" class="placeholder-box">
+                <h2>Artist Details</h2>
+                <p>Click an artist from the list to view their details.</p>
+            </div>
         </section>
+<!-- End of Artist Section -->
+
+
+
+
+<!-- Services Section -->
 
         <section id="services" class="grid-con">
             <h2 class="full">Our Services</h2>
             <p></p>
         </section>
+<!-- End of Services Section -->
 
+
+
+
+
+
+<!-- Safety Section -->
         <section id="safety" class="grid-con">
             <h2 class="full">Safety First</h2>
             <p></p>
         </section>
+<!-- End of Safety Section -->
 
+
+
+
+
+<!-- Booking Section -->
         <section id="booking" class="grid-con">
             <h2 class="full">Book an Appointment</h2>
             <p></p>
         </section>
+<!-- End of Booking Section -->
 
+
+
+
+
+<!-- Contact Section -->
         <section id="contact" class="grid-con">
             <h2 class="full">Contact Us</h2>
             <p></p>
         </section>
+<!-- End of Contact Section -->
 
     </main>
+
+
 
     <footer>
         &copy; 2025 INK INC. All rights reserved.
