@@ -15,6 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('tattoo_style');
+            $table->integer('experience_years');
+            $table->text('bio');
+            $table->string('portfolio_url');
+            $table->string('profile_img_url');
+            $table->string('fun_fact');
             $table->timestamps();
         });
     }
