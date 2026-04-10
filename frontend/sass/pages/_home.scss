@@ -1,8 +1,8 @@
 section{
     scroll-snap-align: start;
-    display: flex;
     height: fit-content;
-    padding: 0 25px;
+    padding: 0 15px;
+    width: 100vw;
 }
 
 #top{
@@ -54,7 +54,6 @@ h1 span{
 
 #artists{
     background-color: var(--coral);
-   
 }
 
 #services{

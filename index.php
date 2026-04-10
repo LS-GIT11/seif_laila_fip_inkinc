@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="frontend/css/main.css">
     <link rel="stylesheet" href="frontend/css/grid.css">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="module" src="frontend/js/main.js"></script>
     <title>Homepage - INK INC.</title>
 </head>
@@ -31,7 +32,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="app">
 
  <!-- Hero Section -->
         <section id="top" class="">
@@ -56,7 +57,6 @@
 <!-- Artists Section -->
         <section id="artists" class="grid-con">
             <h2 class="full">Our Artists</h2>
-            <p></p>
 
             <div v-if="loadingArtists" class="loader-con">
                 <img class="loader" src="frontend/imgs/loader.svg" alt="Loading ...">
@@ -65,7 +65,7 @@
             <ul id="artist-list" v-else>
                     <li v-for="artist in artistData" :key="artist.id">
                         <h3>{{ artist.name }}</h3>
-                        <p>{{ artist['tattoo-style'] }}</p>
+                        <p>{{ artist.tattoo_style }}</p>
                         <button @click="fetchArtistDetails(artist.id)">View Details</button>
                     </li>
             </ul>
@@ -81,9 +81,14 @@
 
             <div v-else-if="selectedArtist" id="info-box">
                 <h2>Artist Details</h2>
-                <p id="name-tag"> {{ selectedArtist.name }}</p>
-                <p id="description-tag"> {{ selectedArtist.description }}</p>
-                <p id="price-tag">${{ selectedArtist.price }}</p>
+                <img id="artist-photo" :src="selectedArtist.profile_img_url" alt="Photo of {{ selectedArtist.name }}">
+                <p id="name-tag">{{ selectedArtist.name }}</p>
+                <p id="style-tag">{{ selectedArtist.tattoo_style }}</p>
+                <p id="experience-tag">{{ selectedArtist.experience_years }} years inking</p>
+                <p id="bio-tag">{{ selectedArtist.bio }}</p>
+                <p id="portfolio-tag"><a :href="selectedArtist.portfolio_url" target="_blank">View Portfolio</a></p>
+                <p id="fun-fact-tag">{{ selectedArtist.fun_fact }}</p>
+
             </div>
 
             <div v-else id="info-box" class="placeholder-box">
