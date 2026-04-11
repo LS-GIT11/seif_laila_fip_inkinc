@@ -66,3 +66,13 @@ const app = Vue.createApp({
 });
 
 app.mount('#app');
+
+
+
+const slide = document.querySelectorAll(".slide-card");
+
+slide.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("slide");
+    });
+});

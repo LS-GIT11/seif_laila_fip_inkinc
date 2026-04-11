@@ -32,7 +32,13 @@ header nav{
 
 header nav li{
     list-style: none;
-    padding: 15px 0 15px 0px;
+    padding: 15px 0 20px 0px;
+    //add a border left on hover and change color to coral
+}
+
+header nav a:active{
+    color: var(--berry);
+    transition: all 0.1s ease-in-out;
 }
 
 header nav a{
@@ -40,8 +46,9 @@ header nav a{
     color: var(--main-black);
     font-weight: 600;
     font-size: 24px;
-    transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in-out;
 }
+
 
 header nav.active{
     display: flex;
@@ -49,7 +56,7 @@ header nav.active{
     position: absolute;
     top: 70px;
     right: 40px;
-    left: 200px;
+    left: 250px;
     right: 15px;
     background-color: var(--main-white);
     box-shadow: 0 24px 36px rgba(3, 1, 15, 0.514);
