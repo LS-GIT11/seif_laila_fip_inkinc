@@ -70,10 +70,10 @@
                     <div class="slide-card col-span-4 m-col-span-6 l-col-span-4" id="card-tattooing">
                         <div class="slide-card-inner">
                             <div class="slide-card-front">
-                                <img src="frontend/imgs/service_1.jpg" alt="Tattooing service image">
-                                <p>Tattooing</p>
+                                <h2>Tattooing</h2>
                             </div>
                             <div class="slide-card-back">
+                                <h2>Tattooing</h2>
                                 <p>Our skilled artists create custom tattoos tailored to your vision, ensuring a unique and personal experience.</p>
                             </div>
                         </div>
@@ -81,10 +81,10 @@
                     <div class="slide-card col-span-4 m-col-span-6 l-col-span-4" id="card-piercing">
                         <div class="slide-card-inner">
                             <div class="slide-card-front">
-                                <img src="frontend/imgs/service_2.jpg" alt="Piercing service image">
-                                <p>Piercing</p>
+                                <h2>Piercing</h2>
                             </div>
                             <div class="slide-card-back">
+                                <h2>Piercing</h2>
                                 <p>We offer professional piercing services with a focus on safety, hygiene, and precision for a comfortable experience.</p>
                             </div>
                         </div>
@@ -92,10 +92,10 @@
                     <div class="slide-card col-span-4 m-col-span-6 l-col-span-4" id="card-cover-ups">
                         <div class="slide-card-inner">
                             <div class="slide-card-front">
-                                <img src="frontend/imgs/service_3.jpg" alt="Cover-up service image">
-                                <p>Cover-Ups</p>
+                                <h2>Cover-Ups</h2>
                             </div>
                             <div class="slide-card-back">
+                                <h2>Cover-Ups</h2>
                                 <p>Our artists specialize in transforming old or unwanted tattoos into stunning new designs, giving you a fresh start.</p>
                             </div>
                         </div>
@@ -103,10 +103,10 @@
                     <div class="slide-card col-span-4 m-col-span-6 l-col-span-4" id="card-touch-ups">
                         <div class="slide-card-inner">
                             <div class="slide-card-front">
-                                <img src="frontend/imgs/service_4.jpg" alt="Touch-up service image">
-                                <p>Touch-Ups</p>
+                                <h2>Touch-Ups</h2>
                             </div>
                             <div class="slide-card-back">
+                                <h2>Touch-Ups</h2>
                                 <p>We provide touch-up services to refresh and enhance the vibrancy of your existing tattoos, ensuring they look their best for years to come.</p>
                             </div>
                         </div>
@@ -114,10 +114,10 @@
                     <div class="slide-card col-span-4 m-col-span-6 l-col-span-4" id="card-consultations">
                         <div class="slide-card-inner">
                             <div class="slide-card-front">
-                                <img src="frontend/imgs/service_5.jpg" alt="Consultation service image">
-                                <p>Consultations</p>
+                                <h2>Consultations</h2>
                             </div>
                             <div class="slide-card-back">
+                                <h2>Consultations</h2>
                                 <p>Our consultations help you refine your tattoo ideas, choose the right design and placement, and prepare for your session with confidence.</p>
                             </div>
                         </div>
@@ -125,10 +125,10 @@
                     <div class="slide-card col-span-4 m-col-span-6 l-col-span-4" id="card-aftercare">
                         <div class="slide-card-inner">
                             <div class="slide-card-front">
-                                <img src="frontend/imgs/service_6.jpg" alt="Aftercare service image">
-                                <p>Aftercare Guidance</p>
+                                <h2>Aftercare Guidance</h2>
                             </div>
                             <div class="slide-card-back">
+                                <h2>Aftercare Guidance</h2>
                                 <p>We provide comprehensive aftercare instructions and support to ensure your new tattoo heals properly and maintains its beauty.</p>
                             </div>
                         </div>
