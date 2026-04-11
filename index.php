@@ -128,7 +128,7 @@
 <!-- Booking Section -->
         <section id="booking" class="grid-con">
             <h2 class="full">Book an Appointment</h2>
-            <p></p>
+            <p>Ready to get inked? Schedule your session with us today!</p>
         </section>
 <!-- End of Booking Section -->
 
@@ -139,7 +139,17 @@
 <!-- Contact Section -->
         <section id="contact" class="grid-con">
             <h2 class="full">Contact Us</h2>
-            <p></p>
+            <p>Questions? We're here to help!</p>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button>Send</button>
+            </form>
+
+            <p id="form-message"></p>
         </section>
 <!-- End of Contact Section -->
 
