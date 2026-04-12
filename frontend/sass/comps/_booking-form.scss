@@ -1,0 +1,70 @@
+#booking form{
+    margin: 0 auto;
+    width: 406px;
+}
+
+#booking form input{
+    border: 1px solid var(--main-black);
+}
+
+#name-inputs, #request-selection, #date-selection{
+    margin-top: 20px;
+
+}
+
+#booking form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+#booking form input:focus, #booking form select:focus, #booking form textarea:focus {
+    border-color: var(--coral);
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+    outline: none;
+}
+
+#booking form button {
+    padding: 10px 20px;
+    background-color: var(--coral);
+    color: var(--main-black);
+    border: 1px solid var(--main-black);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#booking select {
+    border: 1px solid var(--main-black);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+#booking textarea {
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--main-black);
+
+}
+
+@media screen and (min-width: 768px) {
+    #booking form{
+        width: 500px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    #booking form{
+        width: 800px;
+    }
+    
+}
