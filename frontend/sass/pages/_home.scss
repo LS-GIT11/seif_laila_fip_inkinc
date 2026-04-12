@@ -65,6 +65,18 @@ h1 span{
     background-color: var(--main-white);
     
 }
+#safety ul li{
+    margin-bottom: 10px;
+    list-style: none;
+
+}
+
+#safety ul li::before{
+    content: "✓";
+    color: var(--coral);
+    margin-right: 10px;
+}
+
 
 #booking{ 
     background-color: var(--main-white);

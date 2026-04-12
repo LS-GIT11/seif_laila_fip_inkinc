@@ -1,12 +1,175 @@
-#artist-photo {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+#artist-list {
+    gap: 15px;
+    list-style: none;
+    margin-left: -40px;
+}
+
+#artist-list img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 99999px;
+    margin-bottom: 5px;
+}
+
+#artist-list h3 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+#artist-list p {
+    margin: 5px;
+    text-align: center;
+    color: var(--coral);
+}
+
+#artist-list p::before,
+#artist-list p::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--coral);
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+
+#artist-list button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 200px;
+}
+
+#artist-list button:hover {
+    background-color: var(--coral);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+}
+
+#artist-list button:active {
+    background-color: var(--berry);
+    transform: translateY(0);
+    transition: all 0.1s ease-in-out;
+}
+
+#info-box {
+    margin: 20px 0 20px 0 ;
+    padding: 20px;
+    background-color: var(--main-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+#info-box h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--main-black);
+}
+
+#name-tag {
+    font-size: 18px;
+    color: var(--coral);
+    margin-bottom: 10px;
+}
+
+#style-tag {
+    font-size: 16px;
+    color: var(--main-black);
     margin-bottom: 15px;
 }
 
-#artist-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#experience-tag {
+    font-size: 14px;
+    color: var(--main-black);
+    margin-bottom: 20px;
+}
+
+#bio-tag {
+    font-size: 14px;
+    color: var(--main-black);
+    line-height: 1.5;
+}
+
+#portfolio-tag {
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: var(--main-black);
+    padding: 10px;
+}
+
+#portfolio-tag a {
+    color: var(--main-white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#fun-fact-tag {
+    margin-top: 20px;
+    color: var(--berry);
+    
+}
+
+@media screen and (min-width: 558px) {
+
+    #info-box {
+        width: 280px;
+        grid-row: 0;
+        margin-bottom: 30px;
+        margin-right: 40px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #info-box {
+        width: 270px;
+        grid-row: 1;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (min-width: 808px) {
+
+    #info-box {
+        width: 320px;
+    }
+
+}
+
+@media screen and (min-width: 858px) {
+
+    #info-box {
+        margin-right: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #artist-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+
+    #info-box {
+        width: 470px;
+        margin-right: 50px;
+    }
+
 }
