@@ -214,30 +214,38 @@
 <!-- Booking Section -->
         <section id="booking" class="grid-con">
             <h2 class="full">Book an Appointment</h2>
-            <p>Ready to get inked? Request your session with us today!</p>
+            <p class="full">Ready to get inked? Request your session with us today!</p>
             <form>
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="date" required>
-                <select placeholder="Select Artist">
-                    <option value="" disabled selected>Select Artist</option>
-                    <option v-for="artist in artistData" :key="artist.id" :value="artist.id">{{ artist.name }}</option>
-                </select>
-                <select placeholder="Select Service" required>
-                    <option value="" disabled selected>Select Service</option>
-                    <option value="custom-arm-shoulder">Custom Tattoo - Arm/Shoulder</option>
-                    <option value="custom-leg-thigh">Custom Tattoo - Leg/Thigh</option>
-                    <option value="custom-back">Custom Tattoo - Back</option>
-                    <option value="custom-chest-stomach">Custom Tattoo - Chest/Stomach</option>
-                    <option value="custom-ribcage">Custom Tattoo - Ribcage</option>
-                    <option value="custom-other">Custom Tattoo - Other</option>
-                    <option value="cover-up">Cover-Up</option>
-                    <option value="touch-up">Touch-Up</option>
-                    <option value="piercing">Piercing</option>
-                </select>
-                <textarea placeholder="Your Tattoo Idea and Important Mentions (recommended)"></textarea>
-                <button>Submit</button>
+                <div id="name-inputs">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div id="date-selection">
+                    <input type="date" required>
+                </div>
+
+                <div id="request-selection">
+                    <select placeholder="Select Artist">
+                        <option value="" disabled selected>Select Artist</option>
+                        <option v-for="artist in artistData" :key="artist.id" :value="artist.id">{{ artist.name }}</option>
+                    </select>
+                    <select placeholder="Select Service" required>
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="custom-arm-shoulder">Custom Tattoo - Arm/Shoulder</option>
+                        <option value="custom-leg-thigh">Custom Tattoo - Leg/Thigh</option>
+                        <option value="custom-back">Custom Tattoo - Back</option>
+                        <option value="custom-chest-stomach">Custom Tattoo - Chest/Stomach</option>
+                        <option value="custom-ribcage">Custom Tattoo - Ribcage</option>
+                        <option value="custom-other">Custom Tattoo - Other</option>
+                        <option value="cover-up">Cover-Up</option>
+                        <option value="touch-up">Touch-Up</option>
+                        <option value="piercing">Piercing</option>
+                    </select>
+                    <textarea placeholder="Your Tattoo Idea and Important Mentions (recommended)"></textarea>
+                    <button>Submit</button>
+                </div>
             </form>
         </section>
 <!-- End of Booking Section -->
