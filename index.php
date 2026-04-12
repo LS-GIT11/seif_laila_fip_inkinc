@@ -17,17 +17,17 @@
 <body>
 
     <header>
-        <img id="logo" src="frontend/imgs/logo.svg" alt="INK INC. logo">
+        <a href="#top"><img id="logo" src="frontend/imgs/logo.svg" alt="INK INC. logo"></a>
         <img id="menu" src="frontend/imgs/menu.svg" alt="Menu icon">
         <nav>
             <ul>
-                <li><a href="#top">Top</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#safety">Safety</a></li>
                 <li><a href="#artists">Artists</a></li>
                 <li><a href="#booking">Booking</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">Restart</a></li>
             </ul>
         </nav>
     </header>
@@ -145,8 +145,8 @@
 <!-- Safety Section -->
         <section id="safety" class="grid-con">
             <h2 class="full">Safety First</h2>
-            <p>We prioritize your safety and hygiene. Our studio follows strict protocols to ensure a clean and safe environment for every client.</p>
-            <ul class="safety-list">
+            <p class="full">We prioritize your safety and hygiene. Our studio follows strict protocols to ensure a clean and safe environment for every client.</p>
+            <ul class="full">
                 <li>All equipment is sterilized using autoclaves.</li>
                 <li>We use single-use needles and disposable gloves.</li>
                 <li>Our artists are trained in bloodborne pathogens and first aid.</li>
@@ -154,7 +154,7 @@
                 <li>We follow local health regulations and guidelines rigorously.</li>
             </ul>
 <!-- I may later take the blog out, i just recall discussing it with Marco during a checkpoint... may be remembering wrong and will only do it of i have time at all-->
-            <p>Feel free to ask our staff about our safety practices during your visit! Plus visit our <a href="blog.html">Healthy Ink Blog</a> for more tips and information.</p>
+            <p class="full">Feel free to ask our staff about our safety practices during your visit! Plus visit our <a href="blog.html">Healthy Ink Blog</a> for more tips and information.</p>
         </section>
 <!-- End of Safety Section -->
 
@@ -163,15 +163,16 @@
 
 <!-- Artists Section -->
         <section id="artists" class="grid-con">
-            <h2 class="full">Our Artists</h2>
+            <h2 class="hidden">Our Artists</h2>
 
             <div v-if="loadingArtists" class="loader-con">
                 <img class="loader" src="frontend/imgs/loader.svg" alt="Loading ...">
             </div>
 
             <ul id="artist-list" v-else>
-                    <li v-for="artist in artistData" :key="artist.id">
-                        <h3>{{ artist.name }}</h3>
+                    <li id="artist-selection" v-for="artist in artistData" :key="artist.id" >
+                        <img id="artist-photo" :src="artist.profile_img_url" alt="Photo of {{ artist.name }}">    
+                        <h3>{{ artist.name }}</h3> 
                         <p>{{ artist.tattoo_style }}</p>
                         <button @click="fetchArtistDetails(artist.id)">View Details</button>
                     </li>
@@ -188,7 +189,6 @@
 
             <div v-else-if="selectedArtist" id="info-box">
                 <h2>Artist Details</h2>
-                <img id="artist-photo" :src="selectedArtist.profile_img_url" alt="Photo of {{ selectedArtist.name }}">
                 <p id="name-tag">{{ selectedArtist.name }}</p>
                 <p id="style-tag">{{ selectedArtist.tattoo_style }}</p>
                 <p id="experience-tag">{{ selectedArtist.experience_years }} years inking</p>
