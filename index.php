@@ -255,13 +255,13 @@
 
 
 <!-- Contact Section -->
-        <section id="contact" class="grid-con">
+        <section id="contact">
             <h2 class="full">Contact Us</h2>
-            <p>Questions? We're here to help!</p>
+            <p class="full">Questions? We're here to help!</p>
             <form>
                 <input type="text" placeholder="First Name" required>
                 <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="Email" required id="contact-email">
                 <input type="text" placeholder="Subject" required>
                 <textarea placeholder="Your Message" required></textarea>
                 <button>Send</button>
