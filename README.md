@@ -10,6 +10,16 @@ INK INC. is a modern tattoo studio concept focused on clean design and strong vi
 5. Launch the project
 
 
+## Backend Setup
+1. Go to /backend
+2. Run: composer install
+3. Copy .env.example to .env
+4. Set database credentials
+5. Run: php artisan migrate
+6. Run: php artisan db:seed
+7. Run: php artisan serve
+
+
 ## Usage
 This project is made to showcase the branding and promotional website for INK INC., a modern tattoo studio concept. Users can browse the website, view dynamic content, and interact with the contact form.
 
