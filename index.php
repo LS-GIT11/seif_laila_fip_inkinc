@@ -49,8 +49,8 @@
             <h2 class="full">About Us</h2>
             <p class="full m-col-span-4 l-col-span-4">INK INC. is dedicated to providing top-notch tattoo and piercing services with a focus on creativity, safety, and customer satisfaction. Our team of skilled artists brings your ideas to life while maintaining the highest standards of professionalism and hygiene.</p>
 
-            <video controls autoplay class="full m-col-span-8 l-col-span-8">
-                <source src="frontend/video/inkinc.mp4" type="video/mp4">
+            <video controls loop class="full m-col-span-8 l-col-span-8">
+                <source src="frontend/video/main-video.mp4" type="video/mp4">
                 Your browser does not support the video tag. Please update your browser to view this content.
             </video>
         </section>
@@ -258,13 +258,13 @@
         <section id="contact">
             <h2 class="full">Contact Us</h2>
             <p class="full">Questions? We're here to help!</p>
-            <form>
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="email" placeholder="Email" required id="contact-email">
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button>Send</button>
+            <form id="contact-form">
+                <input type="text" name="firstName" placeholder="First Name">
+                <input type="text" name="lastName" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email" id="contact-email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
             </form>
 
             <p id="form-message"></p>
